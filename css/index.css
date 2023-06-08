@@ -1,0 +1,153 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.nav-bar{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* .hero-section.img{
+    border: 1px solid black;
+    float: left;
+    margin: 5px;
+} */
+
+.wrapper{
+    display: flex;
+}
+
+.hero-section{
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.hero-section2{
+    width: 1200px;
+    height: 578px;
+    display: block;
+}
+
+.nav-item{
+    padding: 5px 1em;
+    width: 80px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background-color: aqua;
+    margin-top: -3px;
+}
+
+.nav-bar:last-child{
+    border-right: none;
+}
+
+.logo{
+    height: 2cm;
+}
+
+.hero{
+    height: 550px;
+}
+
+.headquarters-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.headquarters-image {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#headquarters-section{
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+#message-us-section{
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.form {
+    display: flex;
+    margin-right: 150px;
+}
+
+input[type=text], select, textarea{
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=date], select {
+    width: 400px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=submit] {
+    width: 500px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.card {
+    width: 500px;
+    border: 1px solid black;
+    margin-left: 200px;
+    border-radius: 4px;
+}
+
+footer {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-right: 30px;
+   text-align: right;
+   border: 1px solid black;
+}
