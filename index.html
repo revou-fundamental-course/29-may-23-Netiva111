@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="./css/index.css">
+
 </head>
 <body>
-    
+    <header class = "atas">
+        <img src="./img/Logo.png" alt="RevoU Logo" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Our Profile</div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Message Us</div>
+        </div>
+    </header>
+    <div class="hero-section" class="hero">
+        <h1>Hi <span id="name"></span>, Welcome to Website!</h1>
+
+        <script>
+            var name = prompt("Masukkan Nama Anda:");
+            document.getElementById("name").innerText = name;
+        </script>
+
+        <h3>Ini adalah website Latihan</h3>
+        <img class="hero-section2" src="img/digitaltech.jpg" alt="">
+    </div>
+    <div id="headquarters-section">
+        <h1>Headquarters</h1>
+        <div class="wrapper">
+            <div class="headquarters-image-container">
+                <div class="headquarters-image"></div>
+                <p>Bandung</p>
+            </div>  
+            <div class="headquarters-image-container">
+                <div class="headquarters-image"></div>
+                <p>Surabaya</p>
+            </div>       
+            <div class="headquarters-image-container">
+                <div class="headquarters-image"></div>
+                <p>Jakarta</p>
+            </div>
+        </div>
+                
+    </div>
+    <div id="message-us-section" class="message-us">
+        <h1>Message Us</h1>
+        <div class="form">
+            <form name="massage-form" onsubmit="return validateform()">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="fullname"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="birth-date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="gender" value="laki-laki">Laki-Laki
+                            <input type="radio" name="gender" value="perempuan">perempuan
+                        </td>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td>
+                                <textarea type="textarea" name="pesan"></textarea>
+                            </td>
+                        </tr>
+                    </tr>
+                </table>
+                <input type="submit" class="submit">
+            </form>
+
+            <script>
+                function validateform(){
+                    var nama = document.forms["message-form"]["fullname"].value;
+                    var date = document.forms["message-form"]["birth-date"].value;
+                    var gender = document.forms["message-form"]["gender"].value;
+                    var pesan = document.forms["message-form"]["pesan"].value;
+
+                    document.getElementById("sender-fullname").innerText = nama;
+                    document.getElementById("sender-date").innerText = date;
+                    document.getElementById("sender-gender").innerText = gender;
+                    document.getElementById("sender-pesan").innerText = pesan;
+                    return false;
+                }
+            </script>
+
+            <div class="card">
+                <p>Nama : <span id="sender-fullname"></span></p>
+                <p>Tanggal Lahir: <span id="sender-date"></span></p>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>Pesan : <span id="sender-pesan"></span></p>
+            </div>
+        </div>
+    </div>
+    <footer>Created by Netiva </footer>
 </body>
 </html>
